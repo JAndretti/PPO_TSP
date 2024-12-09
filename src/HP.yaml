@@ -1,0 +1,39 @@
+PROJECT: "PPO_TSP"
+GROUP: "Two models"
+
+# Environment
+NB_POINT: 20
+
+# Wandb
+LOG: True
+
+# Device
+DEVICE: "cpu"
+
+# Plot
+PLOT: False
+
+# Training
+TOTAL_EPISODES: 2000
+# EPISODE_LEN: 100
+TRAIN_EVERY_N_EPISODES: 4
+BATCH_SIZE: 8
+EPOCHS_TRAIN: 6
+ALPHA: 0.001
+GAMMA: 0.99
+GAE_LAMBDA: 0.90
+POLICY_CLIP: 0.25
+
+# SA
+TEMP_FINAL: 0.01
+K: 50
+
+# Solveur
+OR_TOOLS_TIME: 1
+
+# Test
+FOLDER: ""
+FILE: ""
+NB_EPISODES: 20
+RANDOM: True
+THRESHOLD: 0.9
